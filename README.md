@@ -1,5 +1,5 @@
 # vue-ts-input-values-demo
-This repository demonstrates the differences of behaviors of date input tags with Vue.js for [my blog post]()
+This repository demonstrates the differences of behaviors of date input tags with Vue.js for [my blog post](https://www.shunpoco.dev/blog/vue-date-input-tag)
 
 ## Preparation
 ```
