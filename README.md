@@ -1,6 +1,7 @@
 # vue-ts-input-values-demo
+This repository demonstrates the differences of behaviors of date input tags with Vue.js for [my blog post]()
 
-## Project setup
+## Preparation
 ```
 npm install
 ```
@@ -10,15 +11,5 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Access the demo
+On your browser, please access `localhost:8080`.

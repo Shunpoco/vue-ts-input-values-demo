@@ -17,7 +17,7 @@
     </div>
     <div class="container">
       <h3>MyDate: A component of treating a value as a Date Object.</h3>
-      <my-date :date="date3" />
+      <my-date v-bind:date="date3" />
     </div>
   </div>
 </template>
