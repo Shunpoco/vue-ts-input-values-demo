@@ -9,7 +9,7 @@
     <div class="container">
       <h3>Example2: Treat a value as a Date Object</h3>
       <input type="date"
-        v-bind:value="date2"
+        v-bind:value="dateToStr(date2)"
         v-on:input="date2 = strToDate($event.target.value)"
       />
       <p>{{ date2 }}</p>
@@ -36,8 +36,16 @@ export default class App extends Vue {
   private date2: Date = new Date();
   private date3: Date = new Date();
 
-  strToDate(date: string): Date {
-    return new Date(date);
+  strToDate(str: string): Date {
+    return new Date(str);
+  }
+
+  dateToStr(date: Date): string {
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1 < 9 ? `0${date.getMonth() + 1}` : `${date.getMonth() + 1}`;
+    const day = date.getDate() < 9 ? `0${date.getDate()}` : `${date.getDate()}`;
+    const strDate = `${year}-${month}-${day}`;
+    return strDate;
   }
 }
 </script>
